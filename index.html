@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Audio Landscape</title>
+    <style>
+        @font-face {
+            font-family: 'Roboto Mono';
+            src: url('fonts/Roboto/Roboto-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'Cinzel';
+            src: url('fonts/Cinzel/Cinzel-Regular.otf');
+        }
+        @font-face {
+            font-family: 'Dancing Script';
+            src: url('fonts/Dancing/DancingScript-Regular.otf');
+        }
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            overflow: hidden; background-color: #0e0e0e; font-family: 'Segoe UI', sans-serif;
+        }
+        #canvas-stars {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; pointer-events: none;
+        }
+        #canvas-webgl, #canvas-2d {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;
+        }
+        #canvas-2d {
+            z-index: 20; pointer-events: none;
+        }
+
+        /* Clock Styles */
+        #clock-container {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 25;
+            text-align: center;
+            color: #ffffff;
+            pointer-events: none;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        #clock-time {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 3.5em;
+        }
+        #clock-day {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5em;
+            line-height: 0.3em;
+            transform: rotate(-4deg);
+            height: 0.4em;
+            opacity: 0.8;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        #clock-date {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5em;
+        }
+
+        #bg-album-container {
+            position: absolute; top: -10%; left: -10%; width: 120%; height: 120%;
+            background-size: cover; background-position: center; filter: blur(5px);
+            z-index: 1; opacity: 0.5; transition: opacity 0.5s, filter 0.5s;
+        }
+        #track-container {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            z-index: 30; display: flex; flex-direction: column; align-items: center;
+            text-align: center; color: #ffffff; opacity: 0; transition: opacity 0.5s;
+        }
+        #albumart {
+            width: 250px; height: 250px; border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); margin-bottom: 20px;
+            object-fit: cover; animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+        #track-title {
+            margin: 0; font-size: 2em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        #track-artist {
+            margin: 5px 0 0 0; font-size: 1.2em; font-weight: normal; opacity: 0.8;
+        }
+    </style>
+</head>
+<body data-show-bg="true">
+    <div id="bg-album-container"></div>
+    <canvas id="canvas-stars"></canvas>
+    <canvas id="canvas-webgl"></canvas>
+    <canvas id="canvas-2d"></canvas>
+
+    <div id="clock-container">
+        <div id="clock-time">- 00:00 -</div>
+        <div id="clock-day">Wednesday</div>
+        <div id="clock-date">Jun 13 20</div>
+    </div>
+
+    <div id="track-container">
+        <img id="albumart" alt="" />
+        <div>
+            <h1 id="track-title">Waiting for music...</h1>
+            <h2 id="track-artist">Artist</h2>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/color-thief.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

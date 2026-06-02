@@ -1,0 +1,192 @@
+{
+  "autoColor": {
+    "text": "Auto Color (Color Thief)",
+    "type": "checkbox",
+    "value": true
+  },
+  "bgColor": {
+    "text": "Background Color",
+    "type": "color",
+    "value": "#0e0e0e"
+  },
+  "fontColor": {
+    "text": "Text Color",
+    "type": "color",
+    "value": "#ffffff"
+  },
+  "displayScaling": {
+    "text": "Global Scaling",
+    "type": "slider",
+    "value": 1,
+    "min": 0.1,
+    "max": 1,
+    "step": 0.01
+  },
+  "starToggle": {
+    "text": "Starry Background",
+    "type": "checkbox",
+    "value": true
+  },
+  "starCount": {
+    "text": "Star Count",
+    "type": "textbox",
+    "value": "150"
+  },
+  "showMountain": {
+    "text": "Show 3D Mountains",
+    "type": "checkbox",
+    "value": true
+  },
+  "hillColor": {
+    "text": "Mountain Color",
+    "type": "color",
+    "value": "#ffffff"
+  },
+  "hillOpacity": {
+    "text": "Mountain Opacity",
+    "type": "slider",
+    "value": 50,
+    "min": 0,
+    "max": 1000,
+    "step": 1
+  },
+  "speed": {
+    "text": "Movement Speed",
+    "type": "slider",
+    "value": 1,
+    "min": 0,
+    "max": 5,
+    "step": 0.1
+  },
+  "mouseParallax": {
+    "text": "Mouse Parallax (Tilt)",
+    "type": "checkbox",
+    "value": true
+  },
+  "parallaxIntensity": {
+    "text": "Tilt Intensity",
+    "type": "slider",
+    "value": 1,
+    "min": 0,
+    "max": 5,
+    "step": 0.1
+  },
+  "showAlbumArt": {
+    "text": "Show Album Art & Info",
+    "type": "checkbox",
+    "value": true
+  },
+  "albumBgToggle": {
+    "text": "Show Album Background",
+    "type": "checkbox",
+    "value": true
+  },
+  "blurIntensity": {
+    "text": "Background Blur",
+    "type": "slider",
+    "value": 5,
+    "min": 0,
+    "max": 20,
+    "step": 1
+  },
+  "isSquare": {
+    "text": "Square Album Art",
+    "type": "checkbox",
+    "value": false
+  },
+  "albumRotation": {
+    "text": "Album Rotation",
+    "type": "checkbox",
+    "value": false
+  },
+  "showVisualizer": {
+    "text": "Show Mountain Visualizer",
+    "type": "checkbox",
+    "value": true
+  },
+  "visualizerStyle": {
+    "text": "Visualizer Style",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Circle Peaks",
+      "Square Peaks"
+    ]
+  },
+  "meteorFrequency": {
+    "text": "Meteor Frequency (Seconds)",
+    "type": "slider",
+    "value": 5,
+    "min": 1,
+    "max": 10,
+    "step": 1
+  },
+  "meteorCount": {
+    "text": "Meteor Count (Per Cycle)",
+    "type": "textbox",
+    "value": "3"
+  },
+  "meteorDirection": {
+    "text": "Meteor Direction",
+    "type": "dropdown",
+    "value": 0,
+    "items": [
+      "Top Left → Right",
+      "Top Right → Left"
+    ]
+  },
+  "timeToggle": {
+    "text": "Show Time",
+    "type": "checkbox",
+    "value": true
+  },
+  "dateToggle": {
+    "text": "Show Date",
+    "type": "checkbox",
+    "value": true
+  },
+  "_12hour": {
+    "text": "12-Hour Format",
+    "type": "checkbox",
+    "value": true
+  },
+  "mmddyy": {
+    "text": "MM/DD/YY Format",
+    "type": "checkbox",
+    "value": false
+  },
+  "clockScale": {
+    "text": "Clock Size",
+    "type": "slider",
+    "value": 80,
+    "min": 20,
+    "max": 200,
+    "step": 1
+  },
+  "clockX": {
+    "text": "Clock Position X",
+    "type": "slider",
+    "value": 50.0,
+    "min": 0,
+    "max": 100,
+    "step": 0.1
+  },
+  "clockY": {
+    "text": "Clock Position Y",
+    "type": "slider",
+    "value": 36.2,
+    "min": 0,
+    "max": 100,
+    "step": 0.1
+  },
+  "clockAutoColor": {
+    "text": "Clock Auto Color",
+    "type": "checkbox",
+    "value": true
+  },
+  "clockColor": {
+    "text": "Clock Manual Color",
+    "type": "color",
+    "value": "#ffffff"
+  }
+}
