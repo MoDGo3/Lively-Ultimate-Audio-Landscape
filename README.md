@@ -17,6 +17,8 @@
    <br><img src="assets/4.png" width="500" />
 6. **แตกไฟล์ `.zip`** ที่ดาวน์โหลดมาลงในโฟลเดอร์นี้ คุณจะได้โฟลเดอร์ชื่อ `ultimate_audio_landscape`
    <br><img src="assets/5.png" width="500" />
+   ## ลบโฟลเดอร์ ##
+   โฟลเดอร์ชื่อ assets และ README.md
 7. **ปิดโปรแกรม Lively Wallpaper** โดยคลิกขวาที่ไอคอนในเมนูซ่อนไอคอน (System Tray) มุมขวาล่างของจอ แล้วกดออก
    <br><img src="assets/6.png" width="500" />
 8. **เปิดโปรแกรม Lively Wallpaper ขึ้นมาใหม่** คุณจะเห็นวอลเปเปอร์ "Ultimate Audio Landscape" ปรากฏอยู่ในหน้ารวม (Library) พร้อมใช้งานทันที!
